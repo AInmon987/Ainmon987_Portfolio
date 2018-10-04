@@ -53,7 +53,6 @@ div.firstnav a:hover {
 
 }
 
-
 .text {
     position: relative;
     padding: 225px 5px 150px 5px;
@@ -68,6 +67,17 @@ div.firstnav a:hover {
     text-shadow: 5px 3px black;
 }
 
-blockquote {
+article {
     color: whitesmoke;
+}
+
+#secondimg {
+    background: url(../img/life.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    padding: 220px 3px 145px 3px;
 }
