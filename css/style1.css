@@ -53,6 +53,7 @@ div.firstnav a:hover {
 
 }
 
+
 .text {
     position: relative;
     padding: 225px 5px 150px 5px;
@@ -65,4 +66,8 @@ div.firstnav a:hover {
     top: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 3px black;
+}
+
+blockquote {
+    color: whitesmoke;
 }
