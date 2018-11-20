@@ -17,57 +17,35 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-div.firstnav {
-    overflow: hidden;
-    white-space: nowrap;
-    list-style-type: none;
-    margin: 30px 1px 30px 1px;
+    line-height: 2;
 
 }
 
-div.firstnav a {
-    display: block;
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    background: grey;
     color: white;
+    padding: 5px;
+    font-size: 20px;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    float: left;
 }
 
-div.firstnav a:hover {
-    background-color: black;
+nav a:hover {
+    background: rgb(40, 40, 40);
 }
 
-.firstnav h1 {
-    color: whitesmoke;
-    margin-left: 10px;
-}
-
-#firstimg {
-    background: url(../img/banner.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.text {
-    position: relative;
-    padding: 225px 5px 150px 5px;
-}
-
-.text-middle h1 {
-    position: absolute;
-    color: #C1B5A1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 5px 3px black;
-}
 
 article {
     color: whitesmoke;
+    line-height: 50px;
+
 }
 
 #secondimg {
@@ -93,10 +71,19 @@ section#rightColumn {
     width: 50%;
     padding: 1.5em;
     box-sizing: border-box;
-
-
 }
 
 footer {
     clear: both;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figure {
+    border-image: url(blacknwhite.jpeg) 50 repeat;
+    margin: 20px auto 0px;
+    width: 100%;
 }
