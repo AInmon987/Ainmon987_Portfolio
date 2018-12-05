@@ -63,7 +63,9 @@ section#leftColumn {
     clear: both;
     float: left;
     width: 45%;
-    padding: 1.5em
+    padding: 1.5em;
+    font-size: 1em;
+
 }
 
 section#rightColumn {
@@ -71,19 +73,85 @@ section#rightColumn {
     width: 50%;
     padding: 1.5em;
     box-sizing: border-box;
+    font-size: 1em;
+
 }
 
 footer {
     clear: both;
+    background-color: black;
+    margin: 10px;
+    text-align: center;
+
+
 }
 
 figure img {
     display: block;
     width: 100%;
+    border-radius: 10px;
 }
 
 figure {
     border-image: url(blacknwhite.jpeg) 50 repeat;
     margin: 20px auto 0px;
     width: 100%;
+}
+
+a#navicon {
+    display: none;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+span {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+
+    span {
+        display: block;
+        background: rgb(97, 97, 97);
+        padding: 10px;
+
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav:hover a {
+        display: block;
+    }
+}
+
+html {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+article#leftColumn {
+    border: 5px ridge black;
+    border-radius: 30px;
+    background-color: rgb(87, 86, 86);
+    padding: 10px;
+}
+
+article#leftColumn h1 {
+    padding: 10px;
+}
+
+article {
+    padding: 10px;
 }
