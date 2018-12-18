@@ -102,10 +102,6 @@ a#navicon {
     display: none;
 }
 
-/* ===============================
-   Mobile Devices: 0 to 480px 
-   ===============================
-*/
 
 span {
     display: none;
@@ -138,6 +134,11 @@ figure#pictures {
     text-align: center;
     
 }
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
 
 @media only screen and (max-width: 480px) {
     nav {
