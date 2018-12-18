@@ -1,30 +1,27 @@
 @charset "utf-8";
 
+/* The style is for the html. The rule makes every page have a color of #474747. hasa height of 100% and makes all the text have a color of whitesmoke. */
 html {
     background: #474747;
     height: 100%;
     color: whitesmoke;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    justify-content: center;
 }
 
+/* The rule is for the body and makes all the font have a font-family of Roboto, san-serif;. The rule also makes the line-height of two. */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 2;
-
 }
 
+/* The rule is for the nav. The stylerule makes the navigation display as grid, has grid-template-columns of four tabs on repeat and has a 1fr. The nav will also be sticky and have a posiion of zer. This makes the navigation move with the page as scrolled down.  */
 nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     position: sticky;
     top: 0;
-    
 }
 
+/* The rule is for the anchor links and the styles makes the anchors have a background of grey, the test is white, padding of 5 pixels, makes the size 20px, centers the text, and make have no decoration. */
 nav a {
     background: grey;
     color: white;
@@ -34,80 +31,72 @@ nav a {
     text-decoration: none;
 }
 
+/* The rule is for when the mouse goes over the links and the rule gives the background a color of dark grey.*/
 nav a:hover {
     background: rgb(40, 40, 40);
 }
 
-
+/* The rule is for the article and makes the text-color whitesmoke , line height of 50px, padding of 10 pixels, and makes the text center. */
 article {
     color: whitesmoke;
     line-height: 50px;
     padding: 10px;
     text-align: center;
-
 }
 
-#secondimg {
-    background: url(../img/life.jpg);
-    background-position: center;
-    background-size: cover;
+/* The rule is for the main and the content that is inside of the main element will be displayed as grid and has a width of 1fr 1fr for the width of the columns. */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.content {
-    position: relative;
-    padding: 225px 5px 150px 5px;
-}
-
+/* The section with id of leftColumn has padding of 1.5em and makes the font-size 1em. */
 section#leftColumn {
-    clear: both;
-    float: left;
-    width: 45%;
     padding: 1.5em;
     font-size: 1em;
 
 }
 
+/* The section with id of rightColumn has padding of 1.5em and makes the font-size 1em. */
 section#rightColumn {
-    float: right;
-    width: 50%;
     padding: 1.5em;
-    box-sizing: border-box;
     font-size: 1em;
-
 }
 
+/* The rule is for footer and makes the background color of black margin 10 pixels, and rounds the conors of 10 pixels.  */
 footer {
     clear: both;
     background-color: black;
     margin: 10px;
     text-align: center;
     border-radius: 10px;
-
-
 }
 
+/* The rule is for the image thats nested in th figure and makes the image display as block, width of 100%, and rounds the borders of 10 pixels. */
 figure img {
     display: block;
     width: 100%;
     border-radius: 10px;
 }
 
+/* The figure has a stye rule that makes the margin 20 pixels auto and 0 pixels. Makes the width 90%. */
 figure {
     border-image: url(bmxnumber1.jpg) 50 repeat;
     margin: 20px auto 0px;
-    width: 100%;
+    width: 90%;
 }
 
+/* The navicon will not show on desktop or tablet only for mobile. */
 a#navicon {
     display: none;
 }
 
-
+/* The rule is for the and the span will not show on desktop only for mobile.  */
 span {
     display: none;
 }
 
-
+/* The article with the id of leftColumn has a border of 5 picels ridge and black. Added border-radius of 30 pixels and gives padding of 10 pixels.  */
 article#leftColumn {
     border: 5px ridge black;
     border-radius: 30px;
@@ -115,37 +104,44 @@ article#leftColumn {
     padding: 10px;
 }
 
+/* The rule is for primary heading that is nested in the article with the id of leftColumn and it addes padding of 10 pixels. */
 article#leftColumn h1 {
     padding: 10px;
 }
 
+/* The style is for the images that are nested in the figure with the id of life, the style makes the display block, width of 75% and The border radius be rounded by 10 pixels  */
 figure#life {
     display: block;
     width: 75%;
     border-radius: 10px;
 }
 
+/* The style is for the images that are nested in the figure with the id of pictures and makes the width 800 pixels, the height be 600 pixels, have a overflow of auto, which makes the pictures have a scroll bar. The border radius be rounded by 10 pixels. makes the pictures display as block. */
 figure#pictures {
     width: 800px;
     height: 600px;
     overflow: auto;
     border-radius: 10px;
-    margin: 5px;
-    text-align: center;
-    
+    display: block;
+
+
+
 }
 
 /* ===============================
    Mobile Devices: 0 to 480px 
    ===============================
 */
-
+/* The media querry is for any devices that have a max width of 480 pixels. */
 @media only screen and (max-width: 480px) {
+
+    /* The style makes the nav relative to the screen.The rule is for the nav on mobile devices. */
     nav {
         grid-template-columns: 1fr;
         position: relative;
     }
 
+    /* The span element will be displayed as block, the background is gray, the padding moves it 10 pixels.  */
     span {
         display: block;
         background: rgb(97, 97, 97);
@@ -153,12 +149,18 @@ figure#pictures {
 
     }
 
+    /*  The rule is for the anchor links and The anchor links will be hidden.  */
     nav a {
         display: none;
     }
 
+    /* The rule is for the anchor links and when hovered over, they are displayed as block. */
     nav:hover a {
         display: block;
     }
+
+    /* Makes the main have one fr unit for each column. */
+    main {
+        grid-template-columns: 1fr;
+    }
 }
-  
