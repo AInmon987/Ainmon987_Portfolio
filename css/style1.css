@@ -2,17 +2,13 @@
 
 html {
     background: #474747;
-    /* Old browsers */
-    /* background: -moz-linear-gradient(top, #474747 0%, #b7b7b7 100%); */
-    /* FF3.6-15 */
-    /* background: -webkit-linear-gradient(top, #474747 0%, #b7b7b7 100%); */
-    /* Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(to bottom, #474747 0%, #b7b7b7 100%);
-    W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474747', endColorstr='#b7b7b7', GradientType=0); */
-    /* IE6-9 */
     height: 100%;
     color: whitesmoke;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 body {
@@ -46,6 +42,8 @@ nav a:hover {
 article {
     color: whitesmoke;
     line-height: 50px;
+    padding: 10px;
+    text-align: center;
 
 }
 
@@ -95,7 +93,7 @@ figure img {
 }
 
 figure {
-    border-image: url(blacknwhite.jpeg) 50 repeat;
+    border-image: url(bmxnumber1.jpg) 50 repeat;
     margin: 20px auto 0px;
     width: 100%;
 }
@@ -111,6 +109,34 @@ a#navicon {
 
 span {
     display: none;
+}
+
+
+article#leftColumn {
+    border: 5px ridge black;
+    border-radius: 30px;
+    background-color: rgb(87, 86, 86);
+    padding: 10px;
+}
+
+article#leftColumn h1 {
+    padding: 10px;
+}
+
+figure#life {
+    display: block;
+    width: 75%;
+    border-radius: 10px;
+}
+
+figure#pictures {
+    width: 800px;
+    height: 600px;
+    overflow: auto;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    
 }
 
 @media only screen and (max-width: 480px) {
@@ -134,26 +160,4 @@ span {
         display: block;
     }
 }
-
-html {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-article#leftColumn {
-    border: 5px ridge black;
-    border-radius: 30px;
-    background-color: rgb(87, 86, 86);
-    padding: 10px;
-}
-
-article#leftColumn h1 {
-    padding: 10px;
-}
-
-article {
-    padding: 10px;
-}
+  
